@@ -1,0 +1,44 @@
+max-h(height)
+  condition = 'screen and (max-height: %s) ' % height
+  @media condition
+    {block}
+
+max-w(width)
+  condition = 'screen and (max-width: %s) ' % width
+  @media condition
+    {block}
+
+min-h(height)
+  condition = 'screen and (min-height: %s) ' % height
+  @media condition
+    {block}
+
+min-w(width)
+  condition = 'screen and (min-width: %s) ' % width
+  @media condition
+    {block}
+
+min-max-w(minWidth, maxWidth)
+  condition = '(min-width: %s) and (max-width: %s) ' % (minWidth maxWidth)
+  @media condition
+    {block}
+
+min-max-h(minHeight, maxHeight)
+  condition = '(min-height: %s) and (max-height: %s) ' % (minHeight maxHeight)
+  @media condition
+    {block}
+
+max-h-max-w(maxHeight, maxWidth)
+  condition = '(max-height: %s) and (max-width: %s) ' % (maxHeight maxWidth)
+  @media condition
+    {block}
+
+tablet()
+  condition = '(min-width: 620px) and (max-width: 1024px)'
+  @media condition
+    {block}
+
+mobile()
+  condition = '(max-width: 619px)'
+  @media condition
+    {block}

@@ -1,0 +1,35 @@
+extends ../layouts/base
+
+block variables
+  - var title='Страницы';
+  - var pageClass='navigation';
+  -
+    var pages = [
+      { name: 'Главная', link: '/front/page-main.html' },
+    ];
+
+block content
+  #root
+  .container
+    h2 Страницы
+    ul
+      each page in pages
+        li
+          a(href=page.link)= page.name
+
+  style.
+    .page--navigation ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .page--navigation ul li a {
+      display: flex;
+      padding: 10px;
+      text-decoration: none;
+      border: 1px solid grey;
+    }

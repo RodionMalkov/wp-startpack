@@ -1,0 +1,68 @@
+{
+  "name": "dev.uralplayer.ru",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "clean": "rm -rf dist"
+  },
+  "author": {
+    "name": "Rodion Malkov",
+    "email": "RodionMalkov@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RodionMalkov/dev.uralplayer.ru"
+  },
+  "keywords": [
+    "webpack",
+    "pug",
+    "scss",
+    "project",
+    "build",
+    "configuration"
+  ],
+  "description": "Сборка Webpack для проекта с использованием Pug, SCSS и других технологий",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.28.6",
+    "@babel/preset-env": "^7.28.6",
+    "@babel/preset-react": "^7.28.5",
+    "autoprefixer": "^10.4.20",
+    "babel-loader": "^9.2.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.9.0",
+    "postcss-loader": "^8.1.1",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "sass": "^1.77.4",
+    "sass-loader": "^14.2.1",
+    "style-loader": "^4.0.0",
+    "stylus": "^0.64.0",
+    "stylus-loader": "^8.1.2",
+    "terser-webpack-plugin": "^5.3.10",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.92.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "dependencies": {
+    "imagesloaded": "^5.0.0",
+    "lightbox2": "^2.11.5",
+    "lodash": "^4.17.21",
+    "masonry-layout": "^4.2.2",
+    "micromodal": "^0.4.10",
+    "normalize.css": "^8.0.1",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "swiper": "^11.1.14",
+    "tom-select": "^2.4.3",
+    "vanilla-lazyload": "^19.1.3"
+  }
+}

@@ -1,0 +1,14 @@
+vw(size)
+  if size > 0
+    value = clamp(1px, (size * 100 / 1920) * 1vw, size * 1px)
+  else 
+    value = clamp(size * 1px, (size * 100 / 1920) * 1vw, (size * 100 / 1920) * 1vw)
+  value
+
+vwt(size)
+  value = (size * 100 / 920) * 1vw
+  value 
+
+vwm(size)
+  value = (size * 100 / 375) * 1vw
+  value

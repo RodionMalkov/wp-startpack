@@ -1,0 +1,18 @@
+*
+  box-sizing border-box
+
+body
+  background-color var(--light-gray)
+
+  font-size vw(16)
+  margin-top vw(100)
+  font-family var(--theme-font-family)
+  +tablet()
+    font-size vwt(16)
+    margin-top vwt(100)
+  +mobile()
+    font-size vwm(16)
+    margin-top vwm(50)
+
+.page-content
+  margin-top vw(128)
