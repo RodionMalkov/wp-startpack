@@ -42,3 +42,11 @@ mobile()
   condition = '(max-width: 619px)'
   @media condition
     {block}
+
+vh(padding)
+  value = "calc(var(--vh, 1vh) * 100 - %s)" % (padding)
+  value
+
+vhFix(padding)
+  value = "calc(var(--vhFix, 1vh) * 100 - %s)" % (padding)
+  value
