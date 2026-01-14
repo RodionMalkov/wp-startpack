@@ -2,19 +2,17 @@
   &__wrapper
     display grid
     grid-template-columns 1fr
-    grid-template-rows 4fr 1fr
     gap vw(20)
-    height vh(vw(0))
+    height vh(vw(110))
     padding vw(20) 0
     +tablet()
       gap vwt(20)
       padding vwt(20) 0
+      height vh(vwt(80))
     +mobile()
       gap vwm(10)
       padding vwm(20) 0
-      height 100%
-      min-height vh(vw(0))
-      grid-template-rows 4fr 1fr
+      height vh(vwm(70))
 
   &__body
     display grid
