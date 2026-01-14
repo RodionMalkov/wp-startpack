@@ -1,5 +1,7 @@
 const path = require('path')
 const fs = require('fs')
+const pkg = require('./package.json')
+
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
@@ -32,7 +34,7 @@ module.exports = (env, argv) => {
     output: {
       filename: 'assets/js/bundle.js',
       path: isProd
-        ? path.resolve(__dirname, 'public/wp-content/themes/eshop')
+        ? path.resolve(__dirname, `public/wp-content/themes/${pkg.name}`)
         : path.resolve(__dirname, 'dist'),
       publicPath: '/'
     },
