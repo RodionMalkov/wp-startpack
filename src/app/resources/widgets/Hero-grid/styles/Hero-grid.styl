@@ -1,19 +1,40 @@
 .hero-grid
   &__wrapper
-    display flex
-    flex-direction column
+    display grid
+    grid-template-columns 1fr
+    grid-template-rows 4fr 1fr
     gap vw(20)
-    height 100%
     height vh(vw(0))
+    padding vw(20) 0
+    +tablet()
+      gap vwt(20)
+      padding vwt(20) 0
+    +mobile()
+      gap vwm(10)
+      padding vwm(20) 0
+      height 100%
+      min-height vh(vw(0))
+      grid-template-rows 4fr 1fr
 
   &__body
     display grid
     grid-template-columns 2fr 1fr
     grid-gap vw(20)
     flex 1
+    transition grid-template-columns 0.3s ease-in-out
+    +tablet()
+      grid-template-columns 1fr
+      grid-template-rows 3fr 2fr
+      grid-gap vwt(20)
+    +mobile()
+      grid-template-rows 1fr 1fr
+      grid-gap vwm(10)
 
   &__main
     width 100%
+    +tablet()
+      flex 1
+      height auto
 
   &__main,
   &__sidebar-block,
@@ -21,16 +42,26 @@
     background-color red
     border-radius vw(10)
     overflow hidden
+    +tablet()
+      border-radius vwt(10)
+    +mobile()
+      border-radius vwm(10)
 
   &__sidebar
     display flex
     flex-direction column
     gap vw(20)
     height 100%
+    +tablet()
+      flex-direction row
+      gap vwt(20)
+    +mobile()
+      flex-direction column
+      gap vwm(10)
 
   &__sidebar-block
     flex 1
     width 100%
 
   &__footer
-    height vw(200)
+    height 100%
