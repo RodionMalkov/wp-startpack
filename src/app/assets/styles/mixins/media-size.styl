@@ -34,12 +34,12 @@ max-h-max-w(maxHeight, maxWidth)
     {block}
 
 tablet()
-  condition = '(min-width: 620px) and (max-width: 1024px)'
+  condition = '(min-width: 320px) and (max-width: 1024px)'
   @media condition
     {block}
 
 mobile()
-  condition = '(max-width: 619px)'
+  condition = '(min-width: 320px) and (max-width: 619px)'
   @media condition
     {block}
 
