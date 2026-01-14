@@ -1,0 +1,21 @@
+.header
+  position fixed
+  top vw(20)
+  left 0
+  width 100%
+  +tablet()
+    top vwt(20)
+  +mobile()
+    top vwm(20)
+    
+  &__wrapper
+    width 100%
+    height vw(90)
+    background-color red
+    border-radius vw(10)
+    +tablet()
+      height vwt(60)
+      border-radius vwt(10)
+    +mobile()
+      height vwm(60)
+      border-radius vwm(10)
