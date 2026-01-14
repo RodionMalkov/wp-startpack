@@ -7,15 +7,26 @@ block variables
     var pages = [
       { name: 'Главная', link: '/front/page-main.html' },
     ];
+  -
+    var widgets = [
+      { name: 'Главный блок сетка', link: '/front/widget-hero-grid.html' },
+    ];
 
 block content
   #root
   .container
+
     h2 Страницы
     ul
       each page in pages
         li
           a(href=page.link)= page.name
+
+    h2 Виджеты
+    ul
+      each widget in widgets
+        li
+          a(href=widget.link)= widget.name
 
   style.
     .page--navigation ul {
